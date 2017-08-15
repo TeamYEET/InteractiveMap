@@ -19,6 +19,10 @@ class ViewController: UIViewController {
         let logoView = UIView()
     }
     
+    class homePage {
+        
+    }
+    
     
 
     override func viewDidLoad() {
