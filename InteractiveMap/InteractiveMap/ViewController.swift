@@ -9,6 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let loginView = UIView()
+    class loginPage {
+        let titleLabel = UILabel()
+        let userLabel = UILabel()
+        let passwordLabel = UILabel()
+        let loginButton = UIButton(type: UIButtonType.system)
+        let helpButton = UIButton(type: UIButtonType.system)
+        let logoView = UIView()
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +31,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    //yeet1
-    //yeet2
-    //yeet3
-    //yeet4
-    //yeet5
 
 }
 
