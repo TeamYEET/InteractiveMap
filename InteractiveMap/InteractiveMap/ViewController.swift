@@ -20,7 +20,31 @@ class ViewController: UIViewController {
     }
     
     class homePage {
+        let mapView = UIView()
+        let timetableView = UIView()
+        let dateView = UIView()
+        let settingView = UIView()
+        class timeTable {
+            //Periods
+                let periodView1 = UIView()
+                let periodView2 = UIView()
+                let periodView3 = UIView()
+                let periodView4 = UIView()
+                let periodView5 = UIView()
+                let periodView6 = UIView()
+        }
+        class homeMap {
+            
+        }
+        class homeDate{
         
+        }
+        class homeSearch {
+            
+        }
+        class homeSettings {
+            
+        }
     }
     
     
