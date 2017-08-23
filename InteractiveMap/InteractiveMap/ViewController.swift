@@ -11,9 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     let loginView = UIView()
     
+    var CCGSblue = UIColor(red: 0/255, green: 0/255, blue: 160/255, alpha: 1.0)
+    
     func createLoginView(){
-        loginView.layer.borderWidth = 6
-        loginView.layer.borderColor = UIColor.blue.cgColor
+        loginView.frame = CGRect(x: 0, y: 0, width: 775, height: 1025)
+        loginView.layer.borderWidth = 50
+        loginView.layer.borderColor = CCGSblue.cgColor
         
         self.view.addSubview(loginView)
     }
@@ -64,6 +67,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        createLoginView()
     }
 
     override func didReceiveMemoryWarning() {
