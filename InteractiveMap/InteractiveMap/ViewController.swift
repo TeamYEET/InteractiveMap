@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     let loginView = UIView()
     
     func createLoginView(){
-        loginView.layer.borderWidth = 5
+        loginView.layer.borderWidth = 6
         loginView.layer.borderColor = UIColor.blue.cgColor
         
         self.view.addSubview(loginView)
