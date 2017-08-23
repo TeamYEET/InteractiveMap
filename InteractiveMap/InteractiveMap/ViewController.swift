@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     let loginView = UIView()
+    
+    func createLoginView(){
+        loginView.layer.borderWidth = 5
+        loginView.layer.borderColor = UIColor.blue.cgColor
+        
+        self.view.addSubview(loginView)
+    }
     class loginPage {
         let titleLabel = UILabel()
         let userLabel = UILabel()
@@ -17,6 +24,10 @@ class ViewController: UIViewController {
         let loginButton = UIButton(type: UIButtonType.system)
         let helpButton = UIButton(type: UIButtonType.system)
         let logoView = UIView()
+        
+        
+        
+        
     }
     
     class homePage {
@@ -32,6 +43,7 @@ class ViewController: UIViewController {
                 let periodView4 = UIView()
                 let periodView5 = UIView()
                 let periodView6 = UIView()
+            
         }
         class homeMap {
             
