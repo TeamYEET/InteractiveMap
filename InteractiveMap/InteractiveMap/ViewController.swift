@@ -9,17 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     let loginView = UIView()
+    let yellowBorder = UIView()
     
     var CCGSblue = UIColor(red: 0/255, green: 0/255, blue: 160/255, alpha: 1.0)
+    var CCGSyellow = UIColor(red: 247/255, green: 218/255, blue: 0/255, alpha: 1.0)
     
-    func createLoginView(){
+    func createCCGSBorder(){
         loginView.frame = CGRect(x: 0, y: 0, width: 775, height: 1025)
-        loginView.layer.borderWidth = 50
+        loginView.layer.borderWidth = 60
         loginView.layer.borderColor = CCGSblue.cgColor
         
+        yellowBorder.frame = CGRect(x: 60, y: 60, width: 655, height: 905)
+        yellowBorder.layer.borderWidth = 20
+        yellowBorder.layer.borderColor = CCGSyellow.cgColor
+        
         self.view.addSubview(loginView)
+        self.view.addSubview(yellowBorder)
     }
+    
     class loginPage {
         let titleLabel = UILabel()
         let userLabel = UILabel()
@@ -67,7 +76,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        createLoginView()
+        createCCGSBorder()
     }
 
     override func didReceiveMemoryWarning() {
