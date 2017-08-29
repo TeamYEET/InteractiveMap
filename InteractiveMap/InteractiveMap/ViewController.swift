@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    //App Initializers
     let loginView = UIView()
     let yellowBorder = UIView()
     
@@ -29,6 +29,9 @@ class ViewController: UIViewController {
         self.view.addSubview(yellowBorder)
     }
     
+    
+    
+    //Login Page Constants
     class loginPage {
         let titleLabel = UILabel()
         let userLabel = UILabel()
@@ -36,47 +39,55 @@ class ViewController: UIViewController {
         let loginButton = UIButton(type: UIButtonType.system)
         let helpButton = UIButton(type: UIButtonType.system)
         let logoView = UIView()
-        
-        
-        
-        
     }
     
-    class homePage {
+    
+    //Login page Functions
+    
+    
+    
+    
+    
+    //Homepage constants
         let mapView = UIView()
         let timetableView = UIView()
         let dateView = UIView()
         let settingView = UIView()
-        class timeTable {
-            //Periods
-                let periodView1 = UIView()
-                let periodView2 = UIView()
-                let periodView3 = UIView()
-                let periodView4 = UIView()
-                let periodView5 = UIView()
-                let periodView6 = UIView()
-            
-        }
-        class homeMap {
-            
-        }
-        class homeDate{
+    
+    
+    
+    
+    //Homepage functions
+    func createTimetable() {
+        timetableView.frame = CGRect(x: 845, y: 80, width: 695, height: 100)
+        //Periods
+            //let periodView1 = UIView()
+            //let periodView2 = UIView()
+            //let periodView3 = UIView()
+            //let periodView4 = UIView()
+            //let periodView5 = UIView()
+            //let periodView6 = UIView()
         
-        }
-        class homeSearch {
-            
-        }
-        class homeSettings {
-            
-        }
+        self.view.addSubview(timetableView)
     }
+
+    
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //App Initializers
         createCCGSBorder()
+        
+        
+        
+        //Login
+        
+        
+        
+        //Homepage
     }
 
     override func didReceiveMemoryWarning() {
