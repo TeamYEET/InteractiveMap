@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     //App Initializers
     let loginView = UIView()
     let yellowBorder = UIView()
+    let imgView = UIImageView()
     
     var CCGSblue = UIColor(red: 0/255, green: 0/255, blue: 160/255, alpha: 1.0)
     var CCGSyellow = UIColor(red: 247/255, green: 218/255, blue: 0/255, alpha: 1.0)
@@ -29,6 +30,32 @@ class ViewController: UIViewController {
         self.view.addSubview(yellowBorder)
     }
     
+    
+    // Christ Church Crest
+    func createCCGSLogo() {
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "CCGS_School_Crest_2013"))
+        imageView.frame = CGRect(x: 258, y: 90, width: 258, height: 450)
+        view.addSubview(imageView)
+    }
+    
+    //Login Button
+    func createStartButton(){
+        let button = UIButton(type: UIButtonType.system)
+        button.frame = CGRect(x: 258,y: 880,width: 170, height: 40)
+        button.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
+        button.setTitle("Login", for: UIControlState.normal)
+        button.layer.cornerRadius = 10
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 35)
+        button.setTitleColor(UIColor(red: 2/255, green: 39/255, blue: 53/255, alpha: 1.0), for: UIControlState.normal)
+        button.addTarget(self, action:#selector(startHomeScreen), for: UIControlEvents.touchUpInside)
+        self.view.addSubview(button)
+    }
+    
+    //Login function to Home Screen
+    func startHomeScreen() {
+        
+    }
+
     
     
     //Login Page Constants
@@ -83,7 +110,8 @@ class ViewController: UIViewController {
         
         //App Initializers
         createCCGSBorder()
-        
+        createCCGSLogo()
+        createStartButton()
         
         
         //Login
