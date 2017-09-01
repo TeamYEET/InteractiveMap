@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         let button = UIButton(type: UIButtonType.system)
         button.frame = CGRect(x: 260,y: 880,width: 285, height: 40)
         button.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
-        button.setTitle("Tap 💯 To Start", for: UIControlState.normal)
+        button.setTitle("Tap 💯👊🏿 To Start", for: UIControlState.normal)
         button.layer.cornerRadius = 10
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 35)
         button.setTitleColor(UIColor(red: 2/255, green: 39/255, blue: 53/255, alpha: 1.0), for: UIControlState.normal)
