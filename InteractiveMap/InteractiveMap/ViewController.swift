@@ -50,23 +50,17 @@ class ViewController: UIViewController {
         button.layer.cornerRadius = 10
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 35)
         button.setTitleColor(UIColor(red: 2/255, green: 39/255, blue: 53/255, alpha: 1.0), for: UIControlState.normal)
-        button.addTarget(self, action:#selector(startHomeScreen), for: UIControlEvents.touchUpInside)
+        button.addTarget(self, action:#selector(createHomepage), for: UIControlEvents.touchUpInside)
         self.view.addSubview(button)
     }
     
-    //Login function to Home Screen
-    func startHomeScreen() {
-        
-    }
-
     //creating the login page
     func createLoginPage(){
         createCCGSBorder()
         createCCGSLogo()
         createStartButton()
-
+        
     }
-    
     
     
     
@@ -77,21 +71,37 @@ class ViewController: UIViewController {
         let dateView = UIView()
         let settingView = UIView()
     
-    
-    
-    
     //Homepage functions
     func createTimetable() {
         timetableView.frame = CGRect(x: 845, y: 80, width: 695, height: 100)
-        //Periods
-            //let periodView1 = UIView()
-            //let periodView2 = UIView()
-            //let periodView3 = UIView()
-            //let periodView4 = UIView()
-            //let periodView5 = UIView()
-            //let periodView6 = UIView()
+        timetableView.layer.borderWidth = 10
+        timetableView.layer.borderColor = CCGSyellow.cgColor
         
         self.view.addSubview(timetableView)
+        
+        //Periods
+            let period1 = UIView();
+            let period2 = UIView();
+            let period3 = UIView();
+            let period4 = UIView();
+            let period5 = UIView();
+            let period6 = UIView();
+            let periods = [period1, period2, period3, period4, period5, period6]
+        
+            var timetableX = 60
+            for i in periods {
+                i.frame = CGRect(x: timetableX, y: 850, width: 109, height: 100)
+                i.layer.borderWidth = 5
+                i.layer.borderColor = CCGSyellow.cgColor
+                timetableX += 109
+                self.view.addSubview(i)
+            }
+    }
+    
+    //Create Homepage
+    func createHomepage() {
+        createCCGSBorder()
+        createTimetable()
     }
 
     
@@ -102,13 +112,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         //App Initializers
-        createLoginPage()
         
         //Login
+            //createLoginPage()
         
         
         
         //Homepage
+            createHomepage()
     }
 
     override func didReceiveMemoryWarning() {
