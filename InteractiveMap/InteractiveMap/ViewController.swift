@@ -31,6 +31,9 @@ class ViewController: UIViewController {
     }
     
     
+    
+    
+    
     // Christ Church Crest
     func createCCGSLogo() {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "CCGS_School_Crest_2013"))
@@ -56,23 +59,13 @@ class ViewController: UIViewController {
         
     }
 
-    
-    
-    //Login Page Constants
-    class loginPage {
-        let titleLabel = UILabel()
-        let userLabel = UILabel()
-        let passwordLabel = UILabel()
-        let loginButton = UIButton(type: UIButtonType.system)
-        let helpButton = UIButton(type: UIButtonType.system)
-        let logoView = UIView()
-        
-        
-        
+    //creating the login page
+    func createLoginPage(){
+        createCCGSBorder()
+        createCCGSLogo()
+        createStartButton()
+
     }
-    
-    
-    //Login page Functions
     
     
     
@@ -109,10 +102,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         //App Initializers
-        createCCGSBorder()
-        createCCGSLogo()
-        createStartButton()
-        
+        createLoginPage()
         
         //Login
         
