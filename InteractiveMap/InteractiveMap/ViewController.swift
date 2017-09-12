@@ -10,7 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    }
+    //Login Page
+    @IBOutlet var BorderBlue: UIView!
+    @IBOutlet weak var BorderYellow: UIView!
+    @IBOutlet weak var LoginView: UIView!
+    
+    @IBOutlet weak var LoginButton: UIButton!
+    
+    //Homepage
+    
+    
 override func viewDidLoad() {
 
     }
