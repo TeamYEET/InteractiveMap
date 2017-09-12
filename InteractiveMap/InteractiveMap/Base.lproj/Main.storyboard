@@ -44,7 +44,7 @@
                                                 </state>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.89784130068022971" green="0.81988662920773114" blue="0.018016207687357989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.048919251537254883" green="0.11805480197057469" blue="0.45630262305699487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
