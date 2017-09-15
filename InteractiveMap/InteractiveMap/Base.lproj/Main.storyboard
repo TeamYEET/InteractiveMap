@@ -29,11 +29,6 @@
                                         <rect key="frame" x="38" y="40" width="693" height="945"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="72X-ll-4zh">
-                                                <rect key="frame" x="19" y="17" width="655" height="911"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </containerView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xob-B0-65B">
                                                 <rect key="frame" x="266" y="825" width="161" height="62"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -44,6 +39,30 @@
                                                 </state>
                                                 <connections>
                                                     <segue destination="lXc-f6-Bj6" kind="presentation" id="Uhr-I1-2LO"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CCGS_School_Crest_2013" translatesAutoresizingMaskIntoConstraints="NO" id="Hc4-0r-B6C">
+                                                <rect key="frame" x="202" y="37" width="289" height="446"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="72X-ll-4zh">
+                                                <rect key="frame" x="16" y="17" width="655" height="911"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </containerView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CCGS_School_Crest_2013" translatesAutoresizingMaskIntoConstraints="NO" id="VCB-HZ-I3I">
+                                                <rect key="frame" x="207" y="37" width="279" height="446"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZl-us-FFB">
+                                                <rect key="frame" x="294" y="770" width="104" height="47"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="lXc-f6-Bj6" kind="presentation" id="lyY-B0-Uaa"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -158,7 +177,10 @@
             <point key="canvasLocation" x="822.65625" y="-847.265625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CCGS_School_Crest_2013" width="139" height="240"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LdU-Va-tuD"/>
+        <segue reference="lyY-B0-Uaa"/>
     </inferredMetricsTieBreakers>
 </document>
