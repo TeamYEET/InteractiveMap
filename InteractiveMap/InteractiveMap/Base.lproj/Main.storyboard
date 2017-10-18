@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="121.875" y="-120.11718749999999"/>
         </scene>
-        <!--View Controller-->
+        <!--Map-->
         <scene sceneID="XoT-91-rCw">
             <objects>
-                <viewController id="lXc-f6-Bj6" sceneMemberID="viewController">
+                <viewController id="lXc-f6-Bj6" customClass="Map" customModule="InteractiveMap" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6IW-CM-nnH"/>
                         <viewControllerLayoutGuide type="bottom" id="ylg-hi-pq8"/>
@@ -127,31 +127,6 @@
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.89784130070000001" green="0.81988662919999999" blue="0.018016207690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbb-LI-zS0">
-                                                <rect key="frame" x="112" y="809" width="20" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.89784130070000001" green="0.81988662919999999" blue="0.018016207690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MMS-3n-fu4">
-                                                <rect key="frame" x="217" y="818" width="20" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.89784130070000001" green="0.81988662919999999" blue="0.018016207690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8gI-id-Ios">
-                                                <rect key="frame" x="335" y="810" width="20" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.89784130070000001" green="0.81988662919999999" blue="0.018016207690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="812-Tj-8qV">
-                                                <rect key="frame" x="449" y="818" width="20" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.89784130070000001" green="0.81988662919999999" blue="0.018016207690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sH1-Cs-7ax">
-                                                <rect key="frame" x="560" y="818" width="20" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.89784130070000001" green="0.81988662919999999" blue="0.018016207690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apa-1e-PUX">
                                                 <rect key="frame" x="43" y="34" width="46" height="36"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -164,30 +139,19 @@
                                                     </segue>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UR7-GP-EqT">
-                                                <rect key="frame" x="8" y="809" width="669" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.89784130070000001" green="0.81988662919999999" blue="0.018016207690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0PV-ea-daU">
-                                                <rect key="frame" x="21" y="114" width="640" height="696"/>
+                                                <rect key="frame" x="21" y="114" width="640" height="814"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appmap" translatesAutoresizingMaskIntoConstraints="NO" id="NcH-dc-5h3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="640" height="696"/>
+                                                    <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appmap" translatesAutoresizingMaskIntoConstraints="NO" id="NcH-dc-5h3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="640" height="814"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="tintColor" red="0.96207086394361974" green="0.98525842733438851" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <gestureRecognizers/>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="9Cw-xg-dTs" appends="YES" id="iQA-eJ-qAb"/>
-                                                            <outletCollection property="gestureRecognizers" destination="G3u-xn-ajB" appends="YES" id="N7o-ja-kjL"/>
-                                                            <outletCollection property="gestureRecognizers" destination="kWU-uV-eNM" appends="YES" id="TsR-Gd-DtC"/>
-                                                            <outletCollection property="gestureRecognizers" destination="AET-4r-QCo" appends="YES" id="e74-ey-kgJ"/>
-                                                        </connections>
                                                     </imageView>
                                                 </subviews>
                                                 <connections>
-                                                    <outlet property="delegate" destination="lXc-f6-Bj6" id="n0d-U4-ugf"/>
+                                                    <outlet property="delegate" destination="lXc-f6-Bj6" id="P6N-BE-dtz"/>
                                                 </connections>
                                             </scrollView>
                                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EPT-b3-3wJ">
@@ -204,6 +168,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="appMap" destination="NcH-dc-5h3" id="dV3-CE-qyC"/>
+                        <outlet property="scrollView" destination="0PV-ea-daU" id="nS0-iH-xCF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yqo-14-yjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pinchGestureRecognizer id="9Cw-xg-dTs"/>
@@ -443,6 +411,6 @@
         <image name="appmap" width="3666" height="8205"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="krv-Mk-d54"/>
+        <segue reference="LdU-Va-tuD"/>
     </inferredMetricsTieBreakers>
 </document>
