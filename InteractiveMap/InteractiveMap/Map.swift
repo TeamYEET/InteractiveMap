@@ -13,7 +13,8 @@ class Map: UIViewController, UIScrollViewDelegate {
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var appMap: UIImageView!
     
-    
+    @IBOutlet var buttonTest: UIButton!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -31,6 +32,11 @@ class Map: UIViewController, UIScrollViewDelegate {
         return appMap
     }
     
+    
+    
+    @IBAction func Test(_ sender: Any) {
+        appMap.image = UIImage(named:"CCGS_School_Crest_2013")
+    }
     
 
     /*

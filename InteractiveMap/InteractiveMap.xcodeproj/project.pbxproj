@@ -15,8 +15,7 @@
 		68556B0F1F3D4E8C00322987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68556B0D1F3D4E8C00322987 /* LaunchScreen.storyboard */; };
 		68556B1A1F3D4E8C00322987 /* InteractiveMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68556B191F3D4E8C00322987 /* InteractiveMapTests.swift */; };
 		68556B251F3D4E8C00322987 /* InteractiveMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68556B241F3D4E8C00322987 /* InteractiveMapUITests.swift */; };
-		9DD031551F9723C700F47FED /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD031541F9723C700F47FED /* Map.swift */; };
-		9DD031571F9723DB00F47FED /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD031561F9723DB00F47FED /* Map.swift */; };
+		9DE1B5601F9725FA00F2767F /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1B55F1F9725FA00F2767F /* Map.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +50,7 @@
 		68556B201F3D4E8C00322987 /* InteractiveMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InteractiveMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68556B241F3D4E8C00322987 /* InteractiveMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveMapUITests.swift; sourceTree = "<group>"; };
 		68556B261F3D4E8C00322987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DD031541F9723C700F47FED /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
-		9DD031561F9723DB00F47FED /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		9DE1B55F1F9725FA00F2767F /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +101,7 @@
 		68556B031F3D4E8C00322987 /* InteractiveMap */ = {
 			isa = PBXGroup;
 			children = (
-				9DD031561F9723DB00F47FED /* Map.swift */,
-				9DD031541F9723C700F47FED /* Map.swift */,
+				9DE1B55F1F9725FA00F2767F /* Map.swift */,
 				68556B041F3D4E8C00322987 /* AppDelegate.swift */,
 				68556B061F3D4E8C00322987 /* ViewController.swift */,
 				68556B081F3D4E8C00322987 /* Main.storyboard */,
@@ -268,10 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DD031571F9723DB00F47FED /* Map.swift in Sources */,
 				68556B071F3D4E8C00322987 /* ViewController.swift in Sources */,
 				68556B051F3D4E8C00322987 /* AppDelegate.swift in Sources */,
-				9DD031551F9723C700F47FED /* Map.swift in Sources */,
+				9DE1B5601F9725FA00F2767F /* Map.swift in Sources */,
 				68099C3B1F666119000A923C /* second.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
